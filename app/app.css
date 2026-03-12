@@ -70,17 +70,17 @@
 
 @layer components {
   .error {
-    @apply text-red-500 text-base font-medium text-center;
+    @apply text-base font-medium text-center text-red-500;
   }
   .all-users {
-    @apply w-full min-h-screen  flex flex-col gap-10;
+    @apply flex flex-col w-full min-h-screen gap-10;
   }
 
   .stats-card {
-    @apply p-6 flex flex-col gap-6 bg-white shadow-400 rounded-20 text-dark-100;
+    @apply flex flex-col gap-6 p-6 bg-white shadow-400 rounded-20 text-dark-100;
 
     .content {
-      @apply flex flex-row md:flex-col-reverse xl:flex-row xl:items-center gap-3 justify-between;
+      @apply flex flex-row justify-between gap-3 md:flex-col-reverse xl:flex-row xl:items-center;
     }
   }
 
@@ -99,7 +99,7 @@
       @apply size-5;
     }
     figcaption {
-      @apply text-sm md:text-lg font-normal truncate text-gray-100;
+      @apply text-sm font-normal text-gray-100 truncate md:text-lg;
     }
   }
 
@@ -110,20 +110,20 @@
     }
   }
   .auth {
-    @apply w-full h-screen flex bg-auth bg-cover bg-no-repeat;
+    @apply flex w-full h-screen bg-no-repeat bg-cover bg-auth;
   }
 
   .payment-success {
-    @apply flex flex-col gap-10 pb-20 items-center justify-center h-screen;
+    @apply flex flex-col items-center justify-center h-screen gap-10 pb-20;
     section {
-      @apply flex flex-col gap-5 justify-between w-full items-center;
+      @apply flex flex-col items-center justify-between w-full gap-5;
       article {
         @apply flex flex-col gap-3.5 w-full items-center justify-center md:max-w-[488px];
         h1 {
-          @apply text-xl md:text-3xl font-semibold text-dark-100;
+          @apply text-xl font-semibold md:text-3xl text-dark-100;
         }
         p {
-          @apply text-gray-100 text-sm font-normal md:text-lg text-center;
+          @apply text-sm font-normal text-center text-gray-100 md:text-lg;
         }
       }
     }
@@ -140,13 +140,13 @@
   }
 
   .travel-hero {
-    @apply bg-hero bg-origin-content bg-cover;
+    @apply bg-cover bg-hero bg-origin-content;
 
     div {
-      @apply flex flex-col bg-linear100 bg-cover;
+      @apply flex flex-col bg-cover bg-linear100;
 
       section {
-        @apply py-48 justify-center items-start flex flex-col gap-6;
+        @apply flex flex-col items-start justify-center gap-6 py-48;
 
         article {
           @apply flex flex-col w-full md:max-w-[520px] gap-3.5;
@@ -165,7 +165,7 @@
     @apply flex flex-col gap-10 pb-20;
 
     .travel-div {
-      @apply flex flex-col lg:flex-row gap-10;
+      @apply flex flex-col gap-10 lg:flex-row;
     }
 
     .back-link {
@@ -192,7 +192,7 @@
       }
 
       .gallery {
-        @apply grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-7 mt-1;
+        @apply grid grid-cols-1 mt-1 md:grid-cols-3 md:grid-rows-2 gap-7;
       }
     }
 
@@ -203,7 +203,7 @@
         @apply flex flex-col gap-4;
 
         h3 {
-          @apply text-base md:text-xl text-dark-400 font-semibold;
+          @apply text-base font-semibold md:text-xl text-dark-400;
         }
 
         ul {
@@ -222,7 +222,7 @@
         @apply flex flex-col gap-4;
 
         h3 {
-          @apply text-base md:text-xl font-semibold text-dark-400;
+          @apply text-base font-semibold md:text-xl text-dark-400;
         }
 
         ul {
@@ -245,16 +245,16 @@
         @apply flex flex-col gap-4;
 
         h3 {
-          @apply text-xl md:text-3xl text-dark-100 font-semibold;
+          @apply text-xl font-semibold md:text-3xl text-dark-100;
         }
 
         p {
-          @apply text-base md:text-2xl text-gray-100 font-normal;
+          @apply text-base font-normal text-gray-100 md:text-2xl;
         }
       }
 
       h2 {
-        @apply text-sm md:text-xl font-normal text-dark-100;
+        @apply text-sm font-normal md:text-xl text-dark-100;
       }
     }
   }
@@ -266,12 +266,12 @@
     article {
       @apply flex flex-col gap-3 mt-4 pl-[18px] pr-3.5;
       h2 {
-        @apply text-sm md:text-lg font-semibold text-dark-100 line-clamp-2;
+        @apply text-sm font-semibold md:text-lg text-dark-100 line-clamp-2;
       }
       figure {
         @apply flex items-center gap-2;
         figCaption {
-          @apply text-xs md:text-sm font-normal text-gray-100;
+          @apply text-xs font-normal text-gray-100 md:text-sm;
         }
       }
     }
@@ -279,30 +279,30 @@
   .link-logo {
     @apply flex items-center gap-1.5 py-10 border-b border-light-100;
     h1 {
-      @apply text-base md:text-2xl font-bold text-dark-100;
+      @apply text-base font-bold md:text-2xl text-dark-100;
     }
   }
   .nav-footer {
     @apply flex items-center gap-2.5 pb-8;
     img {
-      @apply size-10 rounded-full aspect-square;
+      @apply rounded-full size-10 aspect-square;
     }
     article {
       @apply flex flex-col gap-[2px] max-w-[115px];
       h2 {
-        @apply text-sm md:text-base font-semibold text-dark-200 truncate;
+        @apply text-sm font-semibold truncate md:text-base text-dark-200;
       }
       p {
-        @apply text-gray-100 text-xs md:text-sm font-normal truncate;
+        @apply text-xs font-normal text-gray-100 truncate md:text-sm;
       }
     }
   }
   .mobile-sidebar {
-    @apply lg:hidden flex flex-col gap-5;
+    @apply flex flex-col gap-5 lg:hidden;
     header {
-      @apply flex justify-between items-center border-b border-light-100;
+      @apply flex items-center justify-between border-b border-light-100;
       h1 {
-        @apply text-base md:text-2xl font-bold text-dark-100;
+        @apply text-base font-bold md:text-2xl text-dark-100;
       }
       a {
         @apply flex items-center gap-1.5 py-10;
@@ -310,43 +310,43 @@
     }
   }
   .root-nav {
-    @apply flex justify-between gap-4  items-center;
+    @apply flex items-center justify-between gap-4;
     a {
       @apply flex items-center gap-1.5 py-10;
       h1 {
-        @apply text-base md:text-2xl font-bold text-dark-100;
+        @apply text-base font-bold md:text-2xl text-dark-100;
       }
     }
     aside {
-      @apply flex gap-4 items-center;
+      @apply flex items-center gap-4;
       img {
-        @apply size-10 rounded-full aspect-square;
+        @apply rounded-full size-10 aspect-square;
       }
     }
   }
   .footer-container {
-    @apply flex justify-between items-center h-full gap-5;
+    @apply flex items-center justify-between h-full gap-5;
     a {
       @apply flex items-center gap-1.5 py-10;
       h1 {
-        @apply text-base md:text-2xl font-bold text-dark-100;
+        @apply text-base font-bold md:text-2xl text-dark-100;
       }
     }
     div {
       @apply flex items-center gap-2 sm:gap-5;
       a {
-        @apply text-sm md:text-base font-normal text-gray-100;
+        @apply text-sm font-normal text-gray-100 md:text-base;
       }
     }
   }
   .header {
-    @apply flex flex-col gap-5 md:flex-row justify-between w-full;
+    @apply flex flex-col justify-between w-full gap-5 md:flex-row;
     article {
       @apply flex flex-col gap-3.5 w-full;
     }
   }
   .nav-items {
-    @apply flex flex-col px-6 h-full;
+    @apply flex flex-col h-full px-6;
     .container {
       @apply flex flex-col justify-between h-full;
       nav {
@@ -356,13 +356,13 @@
   }
 
   .admin-layout {
-    @apply flex flex-col lg:flex-row h-screen w-full;
+    @apply flex flex-col w-full h-screen lg:flex-row;
     .children {
-      @apply w-full h-full bg-light-200 pt-12 lg:pt-10;
+      @apply w-full h-full pt-12 bg-light-200 lg:pt-10;
     }
   }
   .user-trip {
-    @apply pb-20 flex flex-col lg:flex-row gap-5 justify-between;
+    @apply flex flex-col justify-between gap-5 pb-20 lg:flex-row;
   }
 
   .status-column {
@@ -370,7 +370,7 @@
   }
 
   .dashboard {
-    @apply flex flex-col gap-10 w-full  pb-20;
+    @apply flex flex-col w-full gap-10 pb-20;
 
     .container {
       @apply flex flex-col gap-5 mt-2.5;
@@ -392,26 +392,26 @@
 
 @layer utilities {
   .wrapper {
-    @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
+    @apply w-full px-4 mx-auto max-w-7xl lg:px-8;
   }
   .wrapper-md {
-    @apply w-full max-w-3xl px-4 lg:px-8 mx-auto;
+    @apply w-full max-w-3xl px-4 mx-auto lg:px-8;
   }
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
   .flex-between {
-    @apply flex justify-between items-center;
+    @apply flex items-center justify-between;
   }
   .p-72-bold {
-    @apply text-5xl md:text-7xl font-bold;
+    @apply text-5xl font-bold md:text-7xl;
   }
   .p-40-semibold {
     @apply text-3xl md:text-[40px] md:leading-[44px] font-semibold;
   }
 
   .p-30-bold {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-2xl font-bold md:text-3xl;
   }
   .p-28-bold {
     @apply text-[20px] md:text-[28px] leading-[16px] md:leading-[20px] font-bold;
@@ -420,7 +420,7 @@
     @apply text-[20px] text-2xl md:text-[28px] leading-[16px] md:leading-[20px] font-semibold;
   }
   .p-24-semibold {
-    @apply text-lg md:text-2xl font-semibold;
+    @apply text-lg font-semibold md:text-2xl;
   }
   .p-20-semibold {
     @apply text-base md:text-[20xp] md:leading-7 font-semibold;
@@ -435,7 +435,7 @@
     @apply text-[14px] md:text-[18px] leading-[14px] md:leading-[16px] font-normal;
   }
   .p-16-semibold {
-    @apply text-sm md:text-base font-semibold;
+    @apply text-sm font-semibold md:text-base;
   }
   .button-class {
     @apply !bg-primary-100 !px-4 !rounded-lg !flex !items-center !justify-center !gap-1.5 !shadow-none;
